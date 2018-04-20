@@ -1,0 +1,56 @@
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+    border-color: #e1e1e1;
+}
+.navbar-default {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: white;
+    border:1px solid #e1e1e1;
+    background-image: none;
+    margin-bottom: 0!important;
+    padding: 0;
+}
+.navbar-default li a{
+    color: #54565b;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.navbar-default li a:hover,
+.navbar-default li a:focus,
+.navbar-default li a:link{
+    color: #4b3048;
+}
+.navbar-default li a i{
+    margin-right: 5px;
+}
+.navbar-default li:last-child{
+    border-left: 1px solid #e1e1e1;
+}
+.navbar-default li:last-child a{
+    text-transform: none; 
+}
+.alert{
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 11px;
+}
+.alert-warning{
+    background: #f4f4a7;
+    color: black;
+}
+.alert p{
+    margin: 0;
+    font-size: 14px;
+}
+.bloco-roxo {
+    height: 32px;
+    background: #4b3048;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -5,8 +5,9 @@
   },
   "apps": [
     {
+      "name":"pt",
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/pt",
       "assets": [
         "assets",
         "favicon.ico"
@@ -17,11 +18,46 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
+      "prefix": "pt",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/fontawesome-all.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name":"en",
+      "root": "src",
+      "outDir": "dist/en",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main_en.ts",
+      "polyfills": "polyfills_en.ts",
+      "test": "test_en.ts",
+      "tsconfig": "tsconfig_en.app.json",
+      "testTsconfig": "tsconfig_en.spec.json",
+      "prefix": "en",
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/fontawesome-all.min.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
